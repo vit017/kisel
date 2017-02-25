@@ -45,14 +45,21 @@ body {
   font-size: 16px;
 }
 
-#wrap {
-  background: url(../img/header_redline.jpg) repeat-x, url(../img/footer_redline.jpg) repeat-x 0 100%;
+.line {
+  height: 4px;
+}
+.line-top {
+  background: url(../img/header_redline.jpg) repeat-x;
+}
+.line-bottom {
+  background: url(../img/footer_redline.jpg) repeat-x;
 }
 
 .bg-main {
   background: #fff;
 }
 
+/* header */
 #header {
   padding-top: 5px;
 }
@@ -142,3 +149,16 @@ body {
   float: left;
   list-style: none;
 }
+/* header */
+
+
+/* main */
+#main {
+  margin-top: 15px;
+}
+/* sidebar */
+
+/* sidebar */
+
+
+/* main */
