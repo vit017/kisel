@@ -1,0 +1,95 @@
+/* bootstrap */
+.container {
+  padding: 0 30px;
+}
+
+.vcenter > div {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+/*
+.row > [class*='col-']:first-child {
+  padding-left: 30px;
+}
+.row > [class*='col-']:last-child {
+  p adding-right: 0;
+}
+
+.no-gutter > [class*='col-'] {
+  padd ing-right:0;
+  padd ing-left:0;
+}
+
+.vcenter > [class*='col-'] {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+/* bootstrap */
+
+@font-face {
+  font-family: PTSans-Regular;
+  src: url(../fonts/PTSans-Regular.ttf);
+}
+@font-face {
+  font-family: PTSans-Bold;
+  src: url(../fonts/PTSans-Bold.ttf);
+}
+
+body {
+  background: url(../img/background.jpg) no-repeat;
+  background-size: cover;
+  color: #000;
+  font-family: PTSans-Regular, Arial, sans-serif;
+  font-size: 16px;
+}
+
+#wrap {
+  background: url(../img/header_redline.jpg) repeat-x, url(../img/footer_redline.jpg) repeat-x 0 100%;
+}
+
+.bg-main {
+  background: #fff;
+}
+
+#header {
+  padding-top: 5px;
+}
+
+#main {
+  padding-bottom: 5px;
+}
+
+.h-info {
+  margin-top: 6px;
+}
+
+.part-info {
+  color: #000;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.part-img {
+  float: left;
+  margin-top: 22px;
+}
+
+.part-info small {
+  display: block;
+}
+
+.part-info strong {
+  display: block;
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 23px;
+}
+
+.part-info a {
+  color: #09F;
+}
+.part-info span {
+  display: block;
+  margin-top: -5px;
+}
