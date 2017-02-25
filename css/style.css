@@ -93,3 +93,52 @@ body {
   display: block;
   margin-top: -5px;
 }
+
+#h-search {
+  position: relative;
+}
+#h-search input[type="text"] {
+  border: 1px solid #e5e5e5;
+  height: 35px;
+  padding-left: 40px;
+  width: 100%;
+}
+#h-search input[type="submit"] {
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  background: url(../img/ico-search.png) no-repeat 10px 50%;
+  border: 0;
+}
+
+#h-search input[type="text"]::-webkit-input-placeholder {color:#333;}
+#h-search input[type="text"]::-moz-placeholder          {color:#333;}
+#h-search input[type="text"]:-moz-placeholder           {color:#333;}
+#h-search input[type="text"]:-ms-input-placeholder      {color:#333;}
+
+.h-nav {
+  margin-top: 15px;
+}
+#nav-main {
+  background: #8cba62;
+}
+#nav-main li {
+  padding: 4px 18px;
+}
+#nav-main li:first-child {
+  padding-left: 30px;
+}
+#nav-main li.active {
+  background: #517539;
+}
+#nav-main li.active a{
+  text-decoration: none;
+}
+#nav-main a {
+  color: #fff;
+  text-decoration: underline;
+}
+.list-unstyled > li {
+  float: left;
+  list-style: none;
+}
