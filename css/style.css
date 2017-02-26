@@ -77,13 +77,24 @@
 }
 
 .carousel-control {
+  background-repeat: no-repeat !important;
+  opacity: 1;
   width: 8%;
 }
 .carousel-control.left {
-  background: url(../img/left_arrow.png) no-repeat 20px 50%;
+  background-position: 0 50%;
+  background-image: url(../img/left_arrow_gray.png);
+}
+.carousel-control.left:hover {
+  background-image: url(../img/left_arrow.png);
 }
 .carousel-control.right {
-  background: url(../img/right_arrow.png) no-repeat 20px 50%;
+  background-position: 40px 50%;
+  background-image: url(../img/right_arrow_gray.png);
+
+}
+.carousel-control.right:hover {
+  background-image: url(../img/right_arrow.png);
 }
 
 /* отступы, элемент переносится *
@@ -152,7 +163,7 @@ body a:hover {
 
 .bg-main {
   background: #fff;
-  padding-bottom: 300px;
+  padding-bottom: 50px;
 }
 
 /* header */
@@ -277,9 +288,9 @@ body a:hover {
 
 
 .short-info {
-  margin: 50px 0;
+  padding-top: 60px;
 }
-.short-info p {
+.radovo p {
   font-size: 22px;
   margin-right: -40px;
 }
@@ -288,14 +299,14 @@ body a:hover {
 }
 
 .main-section {
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 /* hits */
 .main-section h2 {
   font-family: PTSans-Bold;
   font-size: 30px;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 .descr-hit {
   margin-top: 25px;
@@ -350,7 +361,194 @@ a[href="#carousel-reviews"].right {
   left: 30px;
   text-align: left;
 }
-
 /* reviews */
 
+/* distributor */
+.distrib .catalog {
+  background: url(../img/arrow.png) no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  padding: 15px 20px;
+  position: relative;
+  margin: 0;
+}
+.distrib .partner {
+  padding-left: 45px;
+}
+.distrib .invite {
+  color: #c2303d;
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 19px;
+  margin: 0;
+}
+.distrib .phone {
+  color: #000;
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 43px;
+  line-height: 1;
+}
+.distrib i {
+  display: block;
+  margin-top: 30px;
+}
+/* distributor */
+
+/* delivery */
+.delivery {
+  padding-top: 80px;
+}
+
+.delivery h2 {
+  color: #000;
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 22px;
+}
+.delivery p {
+
+}
+/* delivery */
+
+/* partners */
+
+.partners {
+  padding-top: 70px;
+}
+
+  /* carousel */
+
+.partners .carousel-control.left {
+  background-position: 0 50%;
+}
+.partners .carousel-control.right {
+  background-position: 40px 50%;
+}
+
+.multi-item-carousel .carousel-inner > .item {
+  -webkit-transition: -webkit-transform 500ms ease-in-out left;
+  -moz-transition: -moz-transform 500ms ease-in-out left;
+  -o-transition: -o-transform 500ms ease-in-out left;
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+
+    -webkit-transition: 500ms ease-in-out all;
+    transition: 500ms ease-in-out all;
+
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+
+    -webkit-transform: none!important;
+    transform: none!important;
+  }
+}
+
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+  background-image: none;
+}
+  /* carousel */
+
+/* partners */
+
+/* news */
+.news {
+  padding-top: 70px;
+}
+.news .date {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.news .name a {
+  color: #09f;
+  font-size: 16px;
+  text-decoration: underline;
+}
+/* news */
+
+.callback {
+  background: url(../img/ico-callback.png) no-repeat 30px 50%, #ffd633;
+  color: #0e0e0e;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 50px;
+  opacity: .8;
+  padding-left: 70px;
+  padding-right: 20px;
+}
+.callback:hover {
+  opacity: 1;
+}
+
+.footer-fixed {
+  position: fixed;
+  bottom: 40px;
+}
+
+.arrow-up {
+  background: url(../img/ico-arrow-up.png) no-repeat center, #ffd633;
+  opacity: .8;
+  height: 40px;
+  margin-left: 25px;
+  width: 40px;
+}
+.arrow-up:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
 /* main */
+
+
+/* footer */
+#footer {
+  background: #f2f2f2;
+}
+
+.footer-content {
+  padding: 40px 0 30px;
+}
+
+.footer-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.address {
+  padding-top: 20px;
+}
+
+nav.footer li {
+  padding-bottom: 20px;
+}
+
+nav.footer a {
+  color: #333;
+  text-decoration: underline;
+}
+nav.footer li.active a {
+  text-decoration: none;
+}
+
+.develop {
+  float: right;
+  margin-top: 20px;
+}
+
+/* footer */
