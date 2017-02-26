@@ -29,7 +29,6 @@
   position: relative;
   text-shadow: none;
 }
-
 .carousel .item .for {
   color: #737373;
   display: block;
@@ -46,12 +45,14 @@
   color: #c2303d;
   font-size: 122px;
   line-height: 1;
+  margin-left: -4px;
   text-transform: uppercase;
   font-weight: bold;
 }
 .carousel .item .and-other {
   color: #737373;
   font-size: 22px;
+  margin-left: 3px;
   margin-top: -15px;
 }
 .carousel .item a.to-catalog{
@@ -59,6 +60,7 @@
   color: #fff;
   float: left;
   font-size: 18px;
+  margin-left: 3px;
   margin-top: 10px;
   padding: 3px 20px;
   text-decoration: underline;
