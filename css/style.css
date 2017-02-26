@@ -91,11 +91,20 @@
   background: url(../img/right_arrow.png) no-repeat 20px 50%;
 }
 
+/* отступы, элемент переносится *
 .vcenter > div {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
+/* отступы, элемент переносится */
+.vcenter > div {
+  display: table-cell;
+  vertical-align: middle;
+  float: none !important;
+}
+
+
 /*
 .row > [class*='col-']:first-child {
   padding-left: 30px;
@@ -148,6 +157,7 @@ body a:hover {
 
 .bg-main {
   background: #fff;
+  padding-bottom: 300px;
 }
 
 /* header */
@@ -270,5 +280,32 @@ body a:hover {
 }
 /* sidebar */
 
+
+.short-info {
+  margin: 50px 0;
+}
+.short-info p {
+  font-size: 22px;
+  margin-right: -40px;
+}
+.short-info .download {
+  margin-right: -10px;
+}
+
+/* hits */
+.main-section h2 {
+  font-family: PTSans-Bold;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.descr-hit {
+  margin-top: 25px;
+}
+.descr-hit span {
+  color: #AAA;
+  display: block;
+  font-size: 16px;
+}
+/* hits */
 
 /* main */
