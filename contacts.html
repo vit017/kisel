@@ -145,7 +145,7 @@
                                         <a href="mailto:radovo@bk.ru">radovo@bk.ru</a>
                                     </div>
                                     <div class="sect write-us">
-                                        Написать нам
+                                        <a data-toggle="modal" data-target="#write">Написать нам</a>
                                     </div>
                                     <div class="sect">
                                         <b>Телефоны:</b>
@@ -159,7 +159,8 @@
                             <div class="row vcenter">
                                 <div class="col-md-6">
                                     <h2>Звоните, будем рады сотрудничеству!</h2>
-                                    <p>Быстро обо всем договоримся и уже завтра партия наших продуктов будет отправлена по
+                                    <p>Быстро обо всем договоримся и уже завтра партия наших продуктов будет отправлена
+                                        по
                                         вашему адрес</p>
                                 </div>
                                 <div class="col-md-6">
@@ -231,6 +232,45 @@
         </div>
     </div>
 </footer>
+
+<div id="write" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="write-us-form">
+                <h1 class="title">Написать нам<span class="glyphicon glyphicon-remove close" data-dismiss="modal"></span></h1>
+                <form>
+                    <div class="form-group">
+                        <label for="input-name">Как вас зовут*</label>
+                        <input type="text" class="form-control" id="input-name" placeholder="Как вас зовут">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-phone">Ваш контактный телефон*</label>
+                        <input type="text" class="form-control" id="input-phone" placeholder="Контактный телефон">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-phone">Ваш E-mail*</label>
+                        <input type="text" class="form-control" id="input-phone" placeholder="Контактный телефон">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-message">Текст вашего сообщения</label>
+                        <textarea rows="8" class="form-control" id="input-message" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <div class="form-group captcha">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">I'm not a robot
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a class="submit">Отправить</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
