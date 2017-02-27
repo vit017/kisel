@@ -802,20 +802,25 @@ nav.footer li.active a {
 #write .modal-md {
     width: 500px;
 }
-.write-us-form .close {
+
+#order-product .modal-md {
+    width: 750px;
+}
+
+.modal-form .close {
     font-size: 30px;
     font-weight: normal;
 }
-.write-us-form .title {
+.modal-form .title {
     padding-bottom: 10px;
 }
-.write-us-form label {
+.modal-form label {
     font-weight: normal;
 }
-.write-us-form .form-control {
+.modal-form .form-control {
     color: #000;
 }
-.write-us-form .checkbox:not(checked) label:before {
+.modal-form .checkbox:not(checked) label:before {
     content: ' ';
     position: absolute;
     top: 0;
@@ -826,19 +831,19 @@ nav.footer li.active a {
     background: #fff;
     border: 1px solid #ddd;
 }
-.write-us-form .checkbox label {
+.modal-form .checkbox label {
     padding-left: 35px;
 }
-.write-us-form form [type="checkbox"] {
+.modal-form form [type="checkbox"] {
     display: none;
 }
-.write-us-form form textarea {
+.modal-form form textarea {
     resize: none;
 }
-.write-us-form .glyphicon-remove {
+.modal-form .glyphicon-remove {
     cursor: pointer;
 }
-.write-us-form {
+.modal-form {
     padding: 5px 30px;
 }
 .production .write-us a {
@@ -850,7 +855,7 @@ nav.footer li.active a {
     margin-right: 20px;
     padding: 4px 50px;
 }
-.write-us-form .submit {
+.modal-form .submit {
     background-color: #cc3333;
     border: 1px solid #ccc;
     border-radius: 4px;

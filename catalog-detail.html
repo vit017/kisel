@@ -45,7 +45,7 @@
                         <div class="part-info pull-right text-right i-phone">
                             <small>Телефон в Ижевске</small>
                             <strong>8 (3412) 54-06-00</strong>
-                            <span><a href="#">Заказать обратный звонок</a></span>
+                            <span><a>Заказать обратный звонок</a></span>
                         </div>
                         <div class="part-img pull-right">
                             <img src="img/ico-phone.png" alt="Телефон в Ижевске">
@@ -148,7 +148,7 @@
                                 </div>
                                 <div class="social"></div>
                                 <div class="cart">
-                                    <div class="order">Заказать</div>
+                                    <div class="order" data-toggle="modal" data-target="#order-product">Заказать</div>
                                     <div class="compare">В сравнение</div>
                                 </div>
 
@@ -316,6 +316,48 @@
         </div>
     </div>
 </footer>
+
+<div id="order-product" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-form">
+                <h1 class="title">Заказать данный товар<span class="glyphicon glyphicon-remove close" data-dismiss="modal"></span></h1>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-phone">Ваш контактный телефон*</label>
+                                <input type="text" class="form-control" id="input-phone" placeholder="Контактный телефон">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-phone">Ваш E-mail*</label>
+                                <input type="text" class="form-control" id="input-phone" placeholder="Ваш E-mail">
+                            </div>
+                            <div class="form-group captcha">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">I'm not a robot
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <a class="submit">Сделать заказ</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-message">Комментарий</label>
+                                <textarea rows="7" class="form-control" id="input-message" placeholder="Комментарий"></textarea>
+                            </div>
+                            <i>Мы свяжемся с Вами в течение 2 часов</i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
