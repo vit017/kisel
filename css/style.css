@@ -713,17 +713,60 @@ nav.footer li.active a {
     background-position: 40px 25%;
 }
 
-.features {
-    margin-top: 10px;
+.page-catalog-detail .consist {
+    color: #111;
+}
+
+.page-catalog-detail .features {
+    margin-top: 20px;
+}
+
+#carousel-similar {
+    margin-top: 40px;
+}
+
+.social {
+    background: url(../img/social.png) no-repeat 0 0;
+    height: 30px;
+    margin-top: 40px;
+    width: 130px;
+}
+
+.similar h2 {
+    color: #111;
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 26px;
+}
+
+.cart {
+    margin-top: 15px;
+}
+
+.cart .order {
+    background-color: #517539;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 4px 50px;
+}
+.cart .compare {
+    background:
+            url(../img/ico-compare.png) no-repeat 10px 50%,
+            url(../img/ico-compare-plus.png) no-repeat 35px 50%,
+            url(../img/ico-compare-vline.png) no-repeat 50px 50%,
+            #cc3333;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 15px 4px 60px;
 }
 
 .features p {
     margin: 0;
     padding: 0;
-}
-
-.social {
-    margin-top: 20px;
 }
 
 .button {
