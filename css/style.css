@@ -582,5 +582,12 @@ nav.footer li.active a {
 .item-catalog {
   padding-bottom: 50px;
 }
-
 /* page catalog */
+
+/* page catalog-compare */
+.compare h3 {
+  color: #517539;
+  font-weight: bold;
+  margin-top: 0;
+}
+/* page catalog-compare */
