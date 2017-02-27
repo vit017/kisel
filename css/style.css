@@ -292,7 +292,7 @@ body a:hover {
 
 /* main */
 #main {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* sidebar */
@@ -775,3 +775,43 @@ nav.footer li.active a {
 }
 
 /* page catalog-detail */
+
+
+/* page contact */
+.production {
+    margin-top: -5px;
+}
+.production p {
+    margin-bottom: 0;
+}
+.production b {
+    display: block;
+}
+.production .sect {
+    margin-bottom: 20px;
+}
+.sect.mail {
+    margin-bottom: 10px;
+}
+.sect.write-us {
+    margin-bottom: 30px;
+}
+.production .write-us {
+    background-color: #cc3333;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 4px 50px;
+}
+.production .phone {
+    color: #050505;
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 32px;
+}
+.page-contacts .delivery {
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+/* page contact */
