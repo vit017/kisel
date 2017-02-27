@@ -557,7 +557,6 @@ nav.footer li.active a {
 .compare h3 {
   color: #517539;
   font-weight: bold;
-  margin-bottom: 30px;
   margin-top: 0;
 }
 .img-hit {
@@ -580,3 +579,27 @@ nav.footer li.active a {
   width: 72px;
 }
 /* page catalog-compare */
+
+
+/* page catalog-detail */
+.page-catalog-detail .carousel-control.left {
+  background-position: 0 25%;
+}
+.page-catalog-detail .carousel-control.right {
+  background-position: 40px 25%;
+}
+.features {
+  margin-top: 20px;
+}
+.features p {
+  margin: 0;
+  padding: 0;
+}
+.social {
+  margin-top: 20px;
+}
+.button {
+  display: inline-block;
+  padding: 5px 15px 5px 0;
+}
+/* page catalog-detail */
