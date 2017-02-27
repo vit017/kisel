@@ -97,13 +97,13 @@
   background-image: url(../img/right_arrow.png);
 }
 
-/* отступы, элемент переносится *
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ *
 .vcenter > div {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
-/* отступы, элемент переносится */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 .vcenter > div {
   display: table-cell;
   vertical-align: middle;
@@ -303,7 +303,7 @@ body a:hover {
 }
 
 /* hits */
-.main-section h2 {
+.title {
   font-family: PTSans-Bold;
   font-size: 30px;
   padding-bottom: 20px;
@@ -467,7 +467,7 @@ a[href="#carousel-reviews"].right {
 /* partners */
 
 /* news */
-.news {
+.main-section.news {
   padding-top: 70px;
 }
 .news .date {
@@ -552,3 +552,27 @@ nav.footer li.active a {
 }
 
 /* footer */
+
+
+/* page news */
+.page-news .title {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.breadcrumb {
+  padding: 0;
+  margin-bottom: 0;
+}
+.breadcrumb > li + li:before {
+  content: "В»";
+  padding: 0 5px 0 2px;
+}
+
+.breadcrumb a {
+  color: #aaa;
+  text-decoration: underline;
+}
+.breadcrumb > .active {
+  color: #000;
+}
+/* page news */
