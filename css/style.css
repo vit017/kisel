@@ -521,8 +521,10 @@ nav.footer li.active a {
   margin-bottom: 15px;
 }
 .breadcrumb {
-  padding: 0;
+  background: none;
+  font-size: 14px;
   margin-bottom: 0;
+  padding: 0;
 }
 .breadcrumb > li + li:before {
   content: "»";
@@ -530,11 +532,27 @@ nav.footer li.active a {
 }
 
 .breadcrumb a {
-  color: #aaa;
+  color: #666;
   text-decoration: underline;
 }
 .breadcrumb > .active {
   color: #000;
+}
+
+.news-item {
+  padding-bottom: 40px;
+}
+.pagination .active a {
+  background-color: #eee;
+  border-color: #ddd;
+  color: #666;
+}
+.pagination li:hover a, .pagination .active:hover a {
+  background-color: #517539;
+  color: #b9c8b0;
+}
+.pagination li a {
+  color: #666;
 }
 /* page news */
 
