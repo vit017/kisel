@@ -660,11 +660,11 @@ nav.footer li.active a {
 
 .page-catalog-compare .item-catalog {
     padding-top: 35px;
-    padding-right: 30px;
+    padding-right: 45px;
 }
 
 .compare .item-catalog {
-    padding: 0;
+    padding-top: 15px;
 }
 
 .compare h3 {
