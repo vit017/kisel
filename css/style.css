@@ -195,7 +195,6 @@ body a:hover {
 
 .bg-main {
     background: #fff;
-    padding-bottom: 50px;
 }
 
 /* header */
@@ -510,6 +509,7 @@ a[href="#carousel-reviews"].right {
 
 /* news */
 .main-section.news {
+    padding-bottom: 50px;
     padding-top: 70px;
 }
 
@@ -543,14 +543,15 @@ a[href="#carousel-reviews"].right {
 }
 
 .footer-fixed {
+    bottom: 10px;
+    opacity: .8;
     position: fixed;
-    bottom: 40px;
     z-index: 9999;
 }
 
 .arrow-up {
     background: url(../img/ico-arrow-up.png) no-repeat center, #ffd633;
-    opacity: .8;
+    opacity: 0;
     height: 40px;
     margin-left: 25px;
     width: 40px;
@@ -683,6 +684,7 @@ nav.footer li.active a {
 }
 
 .compare .item-catalog {
+    padding-bottom: 20px;
     padding-top: 15px;
 }
 
