@@ -1,8 +1,23 @@
+function getComparePanel() {
+    var $panel = $('.panel-compare'),
+        $panelImg = $panel.find('.product-img').find('img'),
+        $panelProduct = $panel.find('.product-title').find('span');
+
+    return {'panel': $panel, 'img': $panelImg, 'product': $panelProduct};
+}
+
 $(function () {
+
+    if ($('button.product-compare').length) {
+        $('button.product-compare').click(function() {
+            location.href = 'catalog-compare.html';
+        });
+    }
 
 
     /* catalog detail */
-    $('.panel-compare .close').click(function() {
+    $('.panel-compare .close').click(function () {
+        $(this).closest('.panel-compare').css('z-index', -1);
         $(this).closest('.panel-compare').css('opacity', 0);
     });
 
@@ -15,16 +30,11 @@ $(function () {
             title = $parent.find('h1.title').text(),
             imgSrc = $parent.find('.img-detail').find('img').attr('src');
 
-        console.log($panel)
-        console.log($panelImg)
-        console.log($panelProduct)
-        console.log(title)
-        console.log(imgSrc)
-
         $panelImg.attr('src', imgSrc);
         $panelImg.attr('alt', title);
 
         $panelProduct.text(title);
+        $panel.css('z-index', 999);
         $panel.css('opacity', 1);
     });
 
@@ -43,8 +53,37 @@ $(function () {
      });
      */
 
-    $('[data-toggle="tooltip"]').tooltip();
+
+    $('.page-catalog-compare').length && $('[data-toggle="tooltip"]').tooltip();
     /* catalog compare */
+
+
+    /* catalog */
+    if ($('.item-catalog .img-hit').length) {
+        $('.item-catalog .img-hit').mouseenter(function () {
+            $(this).parent().find('.img-compare').show();
+        });
+        $('.item-catalog .img-hit').mouseleave(function (ev) {
+            $(this).parent().find('.img-compare').hide();
+        });
+        $('.img-compare').click(function () {
+            var $objPamel = getComparePanel(),
+                $parent = $(this).closest('.item-catalog');
+            var title = $parent.find('.descr-hit .product-title').text(),
+                imgSrc = $parent.find('.img-product').attr('src');
+
+            $objPamel.img.attr('src', imgSrc);
+            $objPamel.img.attr('alt', title);
+
+            $objPamel.product.text(title);
+            $objPamel.panel.css('z-index', 999);
+            $objPamel.panel.css('opacity', 1);
+
+            $(this).hide();
+        });
+    }
+    //$('[data-toggle="tooltip"]').tooltip();
+    /* catalog */
 
 
     /* contacts page */

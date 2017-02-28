@@ -7,6 +7,13 @@
     margin-left: 0;
 }
 
+.img-compare {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 #carousel-catalog {
     background: url(../img/bg-slider-top.png) no-repeat, url(../img/bg-slider-bottom.png) no-repeat 0 100%;
 }
@@ -24,6 +31,18 @@
 
 #carousel-catalog .carousel-caption {
     left: 80px;
+}
+
+.item-catalog .img-hit {
+    cursor: pointer;
+}
+
+.item-catalog .tooltip-arrow {
+    display: none;
+}
+.item-catalog .tooltip-inner {
+    background-color: transparent;
+    margin-top: -40px;
 }
 
 .carousel .item .for {
@@ -671,14 +690,13 @@ nav.footer li.active a {
     background-color: #cc3333;
     color: #fff;
     opacity: 0;
-    height: 100px;
     left: 0;
     padding-bottom: 20px;
     padding-top: 10px;
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 999;
+    z-index: -1;
 
     -webkit-transition: opacity .7s ease-out .2s;
     -moz-transition: opacity .7s ease-out .2s;
