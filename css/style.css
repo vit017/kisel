@@ -667,6 +667,36 @@ nav.footer li.active a {
     padding-top: 15px;
 }
 
+.panel-compare {
+    background-color: #cc3333;
+    color: #fff;
+    opacity: 0;
+    height: 100px;
+    left: 0;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+
+    -webkit-transition: opacity .7s ease-out .2s;
+    -moz-transition: opacity .7s ease-out .2s;
+    -o-transition: opacity .7s ease-out .2s;
+    transition: opacity .7s ease-out .2s;
+
+}
+.panel-compare .close {
+    position: absolute;
+    top: 0;
+}
+.panel-compare div {
+    margin-bottom: -4px;
+}
+button.product-compare {
+    color: #333;
+    margin-top: 5px;
+}
 .compare h3 {
     color: #517539;
     font-family: PTSans-Bold, Arial, sans-serif;
