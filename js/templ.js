@@ -16,7 +16,7 @@ function checkFooterBtns($footer, $btnArrow, $btnCallback) {
 
     $btnArrow.css('opacity', .8);
 
-    if (scrolled+document.documentElement.clientHeight >= $footer.offset().top) {
+    if (scrolled + document.documentElement.clientHeight >= $footer.offset().top) {
         $btnArrow.css('position', 'absolute');
         $btnCallback.css('position', 'absolute');
     }
@@ -28,16 +28,17 @@ function checkFooterBtns($footer, $btnArrow, $btnCallback) {
 
 $(function () {
 
+    /* footer fixed btns */
     var $btnArrow = $('.footer-fixed.arrow-up'),
         $btnCallback = $('.footer-fixed.callback'),
         $footer = $('#footer');
 
     window.addEventListener('scroll', checkFooterBtns.bind(null, $footer, $btnArrow, $btnCallback));
 
-    $('.footer-fixed.arrow-up').click(function() {
+    $('.footer-fixed.arrow-up').click(function () {
         $btnArrow = $(this);
         window.removeEventListener('scroll', checkFooterBtns);
-        $("html, body").animate({ scrollTop: 0 }, 200, function() {
+        $("html, body").animate({scrollTop: 0}, 200, function () {
             window.addEventListener('scroll', checkFooterBtns);
             var btnOpacity = getComputedStyle($btnArrow[0]).opacity;
             btnOpacity > 0 && $btnArrow.css('opacity', 0);
@@ -84,7 +85,7 @@ $(function () {
      */
 
     if ($('button.product-compare').length) {
-        $('button.product-compare').click(function() {
+        $('button.product-compare').click(function () {
             location.href = 'catalog-compare.html';
         });
     }
@@ -116,7 +117,6 @@ $(function () {
             $(this).hide();
         });
     }
-    //$('[data-toggle="tooltip"]').tooltip();
     /* catalog */
 
 
