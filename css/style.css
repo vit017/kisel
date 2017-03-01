@@ -989,3 +989,42 @@ button.product-compare {
         padding-left: 50px;
     }
 }
+
+@media screen and (max-width: 991px) {
+    #nav-main {
+        margin-top: 10px;
+    }
+    .carousel-control.right {
+        background-position: 30px 50%;
+    }
+    .descr-short-review {
+        font-size: 16px;
+    }
+    .name-review {
+        font-size: 17px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .distrib .catalog {
+        font-size: 13px;
+        padding: 15px 15px 20px 15px;
+    }
+    .distrib i {
+        margin-top: 22px;
+    }
+    .news .date {
+        font-size: 13px;
+    }
+    .news .name {
+        font-size: 14px;
+    }
+    .footer-fixed.callback {
+        background-position: 5px 50%;
+        margin-right: 10px;
+        padding-left: 25px;
+    }
+    .footer-content {
+        font-size: 14px;
+    }
+}
