@@ -139,24 +139,6 @@
     float: none !important;
 }
 
-/*
-.row > [class*='col-']:first-child {
-  padding-left: 30px;
-}
-.row > [class*='col-']:last-child {
-  p adding-right: 0;
-}
-
-.no-gutter > [class*='col-'] {
-  padd ing-right:0;
-  padd ing-left:0;
-}
-
-.vcenter > [class*='col-'] {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-}
 /* bootstrap */
 
 @font-face {
@@ -936,3 +918,74 @@ button.product-compare {
     padding-top: 30px;
 }
 /* page contact */
+
+
+
+@media screen and (max-width: 1199px) {
+    .part-info strong {
+        font-size: 17px;
+    }
+    .part-info span {
+        font-size: 12px;
+    }
+    #nav-main li {
+        font-size: 14px;
+        padding: 4px 11px;
+    }
+    #nav-main li:first-child {
+        padding-left: 18px;
+    }
+    #nav-main li:last-child {
+        padding-right: 13px;
+    }
+    #h-search input[type="text"] {
+        height: 30px;
+    }
+    .title-sidebar {
+        font-size: 18px;
+    }
+    .radovo p {
+        font-size: 17px;
+    }
+    .name-adv {
+        font-size: 19px;
+    }
+    .descr-adv {
+        font-size: 15px;
+    }
+    .img-review {
+        margin-left: 20px;
+    }
+    #carousel-reviews .carousel-caption {
+        left: 70px;
+    }
+    a.right[href="#carousel-reviews"] {
+        background-position: 30px 65%;
+    }
+    .distrib .invite {
+        font-size: 15px;
+    }
+    .distrib .phone {
+        font-size: 32px;
+    }
+    .distrib i {
+        font-size: 14px;
+        margin-top: 50px;
+    }
+    .distrib .partner {
+        padding-left: 0;
+    }
+    .delivery h2 {
+        font-size: 19px;
+    }
+    .delivery p {
+        font-size: 14px;
+    }
+    .partners .carousel-control.right {
+        background-position: 30px 50%;
+    }
+    .footer-fixed.callback {
+        background-position: 20px 50%;
+        padding-left: 50px;
+    }
+}
