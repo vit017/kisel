@@ -170,11 +170,20 @@
 }
 
 body {
-    background: url(../img/background.jpg) no-repeat center top;
-    bac kground-size: cover;
     color: #000;
     font-family: PTSans-Regular, Arial, sans-serif;
     font-size: 16px;
+    position: relative;
+}
+
+#bg-wrap {
+    background: url(../img/background.jpg) no-repeat center top;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 
 body a:hover {
@@ -282,6 +291,10 @@ body a:hover {
 
 #nav-main li:first-child {
     padding-left: 30px;
+}
+
+#nav-main li:last-child {
+    padding-right: 22px;
 }
 
 #nav-main li.active {
@@ -604,11 +617,6 @@ nav.footer li.active a {
 /* footer */
 
 /* page news */
-.page-news .title {
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
 .breadcrumb {
     background: none;
     font-size: 14px;
