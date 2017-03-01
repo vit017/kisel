@@ -6,16 +6,33 @@ function getComparePanel() {
     return {'panel': $panel, 'img': $panelImg, 'product': $panelProduct};
 }
 
-function checkFooterBtns() {
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop,
-        $btnArrow = $('.footer-fixed.arrow-up');
+function checkFooterBtns($footer, $btnArrow, $btnCallback) {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-    (scrolled > 0) ? $btnArrow.css('opacity', .8) : $btnArrow.css('opacity', 0);
+    if (!scrolled) {
+        $btnArrow.css('opacity', 0);
+        return;
+    }
+
+    $btnArrow.css('opacity', .8);
+
+    if (scrolled+document.documentElement.clientHeight >= $footer.offset().top) {
+        $btnArrow.css('position', 'absolute');
+        $btnCallback.css('position', 'absolute');
+    }
+    else {
+        $btnArrow.css('position', 'fixed');
+        $btnCallback.css('position', 'fixed');
+    }
 }
 
 $(function () {
 
-    window.addEventListener('scroll', checkFooterBtns);
+    var $btnArrow = $('.footer-fixed.arrow-up'),
+        $btnCallback = $('.footer-fixed.callback'),
+        $footer = $('#footer');
+
+    window.addEventListener('scroll', checkFooterBtns.bind(null, $footer, $btnArrow, $btnCallback));
 
     $('.footer-fixed.arrow-up').click(function() {
         $btnArrow = $(this);
