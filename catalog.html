@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,223 +21,178 @@
     <![endif]-->
 </head>
 <body>
-<div class="line line-top"></div>
-<div class="panel-compare">
-    <div class="container">
-        <div class="row vcenter">
-            <div class="col-md-1">
-                <div class="product-img pull-left"><img src="img/small_sravn.jpg" width="64" height="64" alt=""></div>
-            </div>
-            <div class="col-md-10">
-                <div class="product-title"><span>name</span> добавлен к сравнению</div>
-                <div class="product-count">Всего в список сравнения добавлено <span>2</span> товара</div>
-                <button href="catalog-compare.html" class="product-compare">Сравнить товары</button>
-            </div>
-            <div class="col-md-1">
-                <span class="glyphicon glyphicon-remove close pull-right"></span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container bg-main">
+
+<div id="wrap">
     <header id="header">
-        <div class="h-info">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logo">
-                        <a href="index.html"><img src="img/logo.png" alt="Радово"></a>
-                    </div>
-                </div>
-                <div class="h-info-text hidden-xs hidden-sm clearfix">
-                    <div class="col-md-3">
-                        <div class="part-img">
-                            <img src="img/ico-clock.png" alt="Телефон в Ижевске">
-                        </div>
-                        <div class="part-info pull-left text-right i-clock">
-                            <small>Режим работы</small>
-                            <strong>пн - пт 9:00 - 17:00</strong>
-                            <span><a href="#">Карта проезда</a></span>
+        <div class="container">
+            <div class="h-info">
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <div class="logo">
+                            <img src="img/logo.png" class="img-responsive" alt="Радово">
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="part-info pull-right text-right i-phone">
-                            <small>Телефон в Ижевске</small>
-                            <strong>8 (3412) 54-06-00</strong>
-                            <span><a href="#">Заказать обратный звонок</a></span>
-                        </div>
-                        <div class="part-img pull-right">
-                            <img src="img/ico-phone.png" alt="Телефон в Ижевске">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Режим работы</p>
+                                <p class="hours">пн - пт 9:00 - 17:00</p>
+                                <p class="map-link"><a class="link-default" href="#">Карта проезда</a></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="part-info pull-right text-right i-phone">
-                            <small>Федеральный номер</small>
-                            <strong>8 800 123 4567</strong>
-                            <span>По России бесплатно</span>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info pull-right">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Телефон в Ижевске</p>
+                                <p class="hours">8 (3412) 54-06-00</p>
+                                <p class="map-link"><a class="link-default" href="#">Заказать обратный звонок</a></p>
+                            </div>
                         </div>
-                        <div class="part-img pull-right">
-                            <img src="img/ico-phone.png" alt="Горячая линия">
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info pull-right">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Федеральный номер</p>
+                                <p class="hours">8 800 123 4567</p>
+                                <p class="note">По России бесплатно</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="h-nav">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="search">
-                        <form action="#" id="h-search">
-                            <input type="submit" value="">
-                            <input type="text" placeholder="Поиск">
-                        </form>
+            <div class="h-navigation">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <div id="h-search">
+                            <form action="#">
+                                <input type="submit" value="">
+                                <input type="text" placeholder="Поиск">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <nav id="h-nav">
+                            <ul class="clearfix list-unstyled">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="#">О комании</a></li>
+                                <li><a class="active" href="catalog.html">Каталог продуктов</a></li>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                                <li><a href="#">Поставщикам</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <nav id="nav-main">
-                        <ul class="list-inline clearfix">
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="#">О комании</a></li>
-                            <li class="active"><a href="catalog.html">Каталог продуктов</a></li>
-                            <li><a href="news.html">Новости</a></li>
-                            <li><a href="#">Партнерам</a></li>
-                            <li><a href="#">Поставщикам</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
+
         </div>
     </header>
 
-    <main id="main">
-        <div class="row">
-            <div class="col-md-3">
-                <aside id="sidebar-left">
-                    <h2 class="title-sidebar">Каталог продуктов</h2>
-                    <nav class="nav-catalog">
-                        <ul class="list-unstyled clearfix">
-                            <li><a href="#">Кисель "Киселёша" с кусочками ягод и фруктов</a></li>
-                            <li><a href="#">Кисель быстрорастворимый</a></li>
-                            <li><a href="#">Кисель овсяный</a></li>
-                            <li><a href="#">Кисель овсяный на основе стевии</a></li>
-                            <li><a href="#">Кисель "Ассорти" в банке</a></li>
-                            <li><a href="#">Кисель с кусочками ягод и фруктов в банке</a></li>
-                            <li><a href="#">Желе</a></li>
-                            <li><a href="#">Желатин и лимонная кислота</a></li>
-                            <li><a href="#">Каша овсяная</a></li>
-                            <li><a href="#">Супы</a></li>
-                            <li><a href="#">Лавровый лист</a></li>
-                            <li><a href="#">Какао порошок</a></li>
-                            <li><a href="#">Кофе</a></li>
-                            <li><a href="#">Бакалея</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </div>
-            <div class="col-md-9">
-                <div id="main-content">
-                    <div class="page-catalog">
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Главная</a></li>
-                            <li class="active">Каталог продуктов</li>
-                        </ul>
-                        <h1 class="title">Каталог продуктов</h1>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="item-catalog">
-                                    <div class="img-hit">
-                                        <img class="img-product" src="img/kiselesha_smorodina.jpg" alt="Киселёша Смородина">
-                                        <img class="img-compare" src="img/sravn.png" alt="В сравнение">
-                                    </div>
-                                    <div class="descr-hit">
-                                        <div class="product-title">1Кисель на натуральном соке «Черная смородина» с кусочками ягод и
-                                            фруктов
+    <main id="content-wrap">
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <aside id="catalog-menu">
+                            <h2>Каталог продуктов</h2>
+                            <nav>
+                                <ul class="list-unstyled clearfix">
+                                    <li><a href="#">Кисель "Киселёша" с кусочками ягод и фруктов</a></li>
+                                    <li><a href="#">Кисель быстрорастворимый</a></li>
+                                    <li><a href="#">Кисель овсяный</a></li>
+                                    <li><a href="#">Кисель овсяный на основе стевии</a></li>
+                                    <li><a href="#">Кисель "Ассорти" в банке</a></li>
+                                    <li><a href="#">Кисель с кусочками ягод и фруктов в банке</a></li>
+                                    <li><a href="#">Желе</a></li>
+                                    <li><a href="#">Желатин и лимонная кислота</a></li>
+                                    <li><a href="#">Каша овсяная</a></li>
+                                    <li><a href="#">Супы</a></li>
+                                    <li><a href="#">Лавровый лист</a></li>
+                                    <li><a href="#">Какао порошок</a></li>
+                                    <li><a href="#">Кофе</a></li>
+                                    <li><a href="#">Бакалея</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <div class="content-center">
+
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Главная</a></li>
+                                <li class="active">Новости</li>
+                            </ul>
+
+                            <h1>Каталог продуктов</h1>
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="item">
+                                        <div class="img-catalog">
+                                            <img class="img-product" src="img/kiselesha_smorodina.jpg"
+                                                 alt="Киселёша Смородина">
+                                            <img class="img-compare" class="img-responsive" src="img/sravn.png" alt="В сравнение">
                                         </div>
-                                        <span>30 гр.</span>
+                                        <div class="text-catalog">
+                                            <div class="product-title">Кисель на натуральном соке «Черная
+                                                смородина» с кусочками ягод и
+                                                фруктов
+                                            </div>
+                                            <span>30 гр.</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="item-catalog">
-                                    <div class="img-hit">
-                                        <img class="img-product" src="img/kiselesha_smorodina.jpg" alt="Киселёша Смородина">
-                                        <img class="img-compare" src="img/sravn.png" alt="В сравнение">
-                                    </div>
-                                    <div class="descr-hit">
-                                        <div class="product-title">2Кисель на натуральном соке «Черная смородина» с кусочками ягод и
-                                            фруктов
-                                        </div>
-                                        <span>30 гр.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="item-catalog">
-                                    <div class="img-hit">
-                                        <img class="img-product" src="img/kiselesha_smorodina.jpg" alt="Киселёша Смородина">
-                                        <img class="img-compare" src="img/sravn.png" alt="В сравнение">
-                                    </div>
-                                    <div class="descr-hit">
-                                        <div class="product-title">3Кисель на натуральном соке «Черная смородина» с кусочками ягод и
-                                            фруктов
-                                        </div>
-                                        <span>30 гр.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="item-catalog">
-                                    <div class="img-hit">
-                                        <img class="img-product" src="img/kiselesha_smorodina.jpg" alt="Киселёша Смородина">
-                                        <img class="img-compare" src="img/sravn.png" alt="В сравнение">
-                                    </div>
-                                    <div class="descr-hit">
-                                        <div class="product-title">4Кисель на натуральном соке «Черная смородина» с кусочками ягод и
-                                            фруктов
-                                        </div>
-                                        <span>30 гр.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="item-catalog">
-                                    <div class="img-hit">
-                                        <img class="img-product" src="img/kiselesha_smorodina.jpg" alt="Киселёша Смородина">
-                                        <img class="img-compare" src="img/sravn.png" alt="В сравнение">
-                                    </div>
-                                    <div class="descr-hit">
-                                        <div class="product-title">5Кисель на натуральном соке «Черная смородина» с кусочками ягод и
-                                            фруктов
-                                        </div>
-                                        <span>30 гр.</span>
-                                    </div>
+
+                            <div class="row">
+                                <div class="text-center">
+                                    <ul class="pagination">
+                                        <li><a href="#">«</a></li>
+                                        <li><a class="active">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="callback footer-fixed left">
-                    Заказать<br>обратный звонок
-                </div>
+
+        <div class="btns pos-r" style="display: none">
+            <div class="callback pos-a">
+                <div>Заказать<br>обратный звонок</div>
             </div>
-            <div class="col-md-1 col-md-offset-8">
-                <div class="arrow-up pull-right footer-fixed right">
-                </div>
+            <div class="arrow-up pos-a">
+                <div>arrow</div>
             </div>
         </div>
-    </main>
 </div>
-<div class="line line-bottom"></div>
+
+</main>
+</div>
 
 <footer id="footer">
     <div class="container">
-        <div class="footer-content">
-            <div class="row">
-                <div class="col-md-3">
+        <div class="row">
+            <div class="content">
+                <div class="col-md-3 col-sm-3 content-left">
                     <div class="copy">
                         <p>&copy 2009 - 2017</p>
                         <p>ООО "Стандарт"</p>
@@ -246,16 +202,16 @@
                         <p>г. Ижевск, ул. Новоажимова, 12</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
                     <nav class="footer">
                         <ul class="list-unstyled">
-                            <li><a href="index.html">Главная</a></li>
+                            <li class="active"><a href="index.html">Главная</a></li>
                             <li><a href="#">О компании</a></li>
-                            <li class="active"><a href="catalog.html">Каталог продуктов</a></li>
+                            <li><a href="catalog.html">Каталог продуктов</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
                     <nav class="footer">
                         <ul class="list-unstyled">
                             <li><a href="news.html">Новости</a></li>
@@ -264,10 +220,10 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3">
-                    <div class="develop">
+                <div class="col-md-3 col-sm-3">
+                    <div class="develop pull-right">
                         <a href="#">
-                            <img src="img/link.png" alt="Электрон18">
+                            <img src="img/link.png" alt="Электрон18" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -275,10 +231,9 @@
         </div>
     </div>
 </footer>
-<div id="bg-wrap"></div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="/js/templ.js"></script>
 </body>
