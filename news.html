@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,256 +21,226 @@
     <![endif]-->
 </head>
 <body>
-<div class="line line-top"></div>
-<div class="container bg-main">
+
+<div id="wrap">
     <header id="header">
-        <div class="h-info">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logo">
-                        <a href="index.html"><img src="img/logo.png" alt="Радово"></a>
-                    </div>
-                </div>
-                <div class="h-info-text hidden-xs hidden-sm clearfix">
-                    <div class="col-md-3">
-                        <div class="part-img">
-                            <img src="img/ico-clock.png" alt="Телефон в Ижевске">
-                        </div>
-                        <div class="part-info pull-left text-right i-clock">
-                            <small>Режим работы</small>
-                            <strong>пн - пт 9:00 - 17:00</strong>
-                            <span><a href="#">Карта проезда</a></span>
+        <div class="container">
+            <div class="h-info">
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <div class="logo">
+                            <img src="img/logo.png" class="img-responsive" alt="Радово">
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="part-info pull-right text-right i-phone">
-                            <small>Телефон в Ижевске</small>
-                            <strong>8 (3412) 54-06-00</strong>
-                            <span><a href="#">Заказать обратный звонок</a></span>
-                        </div>
-                        <div class="part-img pull-right">
-                            <img src="img/ico-phone.png" alt="Телефон в Ижевске">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Режим работы</p>
+                                <p class="hours">пн - пт 9:00 - 17:00</p>
+                                <p class="map-link"><a class="link-default" href="#">Карта проезда</a></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="part-info pull-right text-right i-phone">
-                            <small>Федеральный номер</small>
-                            <strong>8 800 123 4567</strong>
-                            <span>По России бесплатно</span>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info pull-right">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Телефон в Ижевске</p>
+                                <p class="hours">8 (3412) 54-06-00</p>
+                                <p class="map-link"><a class="link-default" href="#">Заказать обратный звонок</a></p>
+                            </div>
                         </div>
-                        <div class="part-img pull-right">
-                            <img src="img/ico-phone.png" alt="Горячая линия">
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info pull-right">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Федеральный номер</p>
+                                <p class="hours">8 800 123 4567</p>
+                                <p class="note">По России бесплатно</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="h-nav">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="search">
-                        <form action="#" id="h-search">
-                            <input type="submit" value="">
-                            <input type="text" placeholder="Поиск">
-                        </form>
+            <div class="h-navigation">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <div id="h-search">
+                            <form action="#">
+                                <input type="submit" value="">
+                                <input type="text" placeholder="Поиск">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <nav id="h-nav">
+                            <ul class="clearfix list-unstyled">
+                                <li><a class="active" href="index.html">Главная</a></li>
+                                <li><a href="#">О комании</a></li>
+                                <li><a href="catalog.html">Каталог продуктов</a></li>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                                <li><a href="#">Поставщикам</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <nav id="nav-main">
-                        <ul class="list-inline clearfix">
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="#">О комании</a></li>
-                            <li><a href="catalog.html">Каталог продуктов</a></li>
-                            <li class="active"><a href="news.html">Новости</a></li>
-                            <li><a href="#">Партнерам</a></li>
-                            <li><a href="#">Поставщикам</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
+
         </div>
     </header>
 
-    <main id="main">
-        <div class="row">
-            <div class="col-md-3">
-                <aside id="sidebar-left">
-                    <h2 class="title-sidebar">Каталог продуктов</h2>
-                    <nav class="nav-catalog">
-                        <ul class="list-unstyled clearfix">
-                            <li><a href="#">Кисель "Киселёша" с кусочками ягод и фруктов</a></li>
-                            <li><a href="#">Кисель быстрорастворимый</a></li>
-                            <li><a href="#">Кисель овсяный</a></li>
-                            <li><a href="#">Кисель овсяный на основе стевии</a></li>
-                            <li><a href="#">Кисель "Ассорти" в банке</a></li>
-                            <li><a href="#">Кисель с кусочками ягод и фруктов в банке</a></li>
-                            <li><a href="#">Желе</a></li>
-                            <li><a href="#">Желатин и лимонная кислота</a></li>
-                            <li><a href="#">Каша овсяная</a></li>
-                            <li><a href="#">Супы</a></li>
-                            <li><a href="#">Лавровый лист</a></li>
-                            <li><a href="#">Какао порошок</a></li>
-                            <li><a href="#">Кофе</a></li>
-                            <li><a href="#">Бакалея</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </div>
-            <div class="col-md-9">
-                <div id="main-content">
-                    <div class="page-news">
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Главная</a></li>
-                            <li class="active">Новости</li>
-                        </ul>
-                        <h1 class="title">Новости компании</h1>
-                        <div class="row">
-                            <div class="news">
-                                <div class="col-md-3">
-                                    <div class="news-item">
-                                        <div class="img-news img-responsive">
-                                            <img src="img/news_sample_img.jpg" width="100%" alt="">
-                                        </div>
-                                        <div class="date">
-                                            <i>07.02.17</i>
-                                        </div>
-                                        <div class="name">
-                                            <a href="#">Новый вид киселя поступил в продажу</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="news-item">
-                                        <div class="img-news img-responsive">
-                                            <img src="img/news_sample_img.jpg" width="100%" alt="">
-                                        </div>
-                                        <div class="date">
-                                            <i>07.02.17</i>
-                                        </div>
-                                        <div class="name">
-                                            <a href="#">Новый вид киселя поступил в продажу</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="news-item">
-                                        <div class="img-news img-responsive">
-                                            <img src="img/news_sample_img.jpg" width="100%" alt="">
-                                        </div>
-                                        <div class="date">
-                                            <i>07.02.17</i>
-                                        </div>
-                                        <div class="name">
-                                            <a href="#">Новый вид киселя поступил в продажу</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="news-item">
-                                        <div class="img-news img-responsive">
-                                            <img src="img/news_sample_img.jpg" width="100%" alt="">
-                                        </div>
-                                        <div class="date">
-                                            <i>07.02.17</i>
-                                        </div>
-                                        <div class="name">
-                                            <a href="#">Новый вид киселя поступил в продажу</a>
-                                        </div>
-                                    </div>
-                                </div>
+    <main id="content-wrap">
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <aside id="catalog-menu">
+                            <h2>Каталог продуктов</h2>
+                            <nav>
+                                <ul class="list-unstyled clearfix">
+                                    <li><a href="#">Кисель "Киселёша" с кусочками ягод и фруктов</a></li>
+                                    <li class="active"><a href="#">Кисель быстрорастворимый</a></li>
+                                    <li><a href="#">Кисель овсяный</a></li>
+                                    <li><a href="#">Кисель овсяный на основе стевии</a></li>
+                                    <li><a href="#">Кисель "Ассорти" в банке</a></li>
+                                    <li><a href="#">Кисель с кусочками ягод и фруктов в банке</a></li>
+                                    <li><a href="#">Желе</a></li>
+                                    <li><a href="#">Желатин и лимонная кислота</a></li>
+                                    <li><a href="#">Каша овсяная</a></li>
+                                    <li><a href="#">Супы</a></li>
+                                    <li><a href="#">Лавровый лист</a></li>
+                                    <li><a href="#">Какао порошок</a></li>
+                                    <li><a href="#">Кофе</a></li>
+                                    <li><a href="#">Бакалея</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <div class="content-center">
 
-                                <div class="col-md-3">
-                                    <div class="news-item">
-                                        <div class="img-news img-responsive">
-                                            <img src="img/news_sample_img.jpg" width="100%" alt="">
-                                        </div>
-                                        <div class="date">
-                                            <i>07.02.17</i>
-                                        </div>
-                                        <div class="name">
-                                            <a href="#">Новый вид киселя поступил в продажу</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="news-item">
-                                        <div class="img-news img-responsive">
-                                            <img src="img/news_sample_img.jpg" width="100%" alt="">
-                                        </div>
-                                        <div class="date">
-                                            <i>07.02.17</i>
-                                        </div>
-                                        <div class="name">
-                                            <a href="#">Новый вид киселя поступил в продажу</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="news-item">
-                                        <div class="img-news img-responsive">
-                                            <img src="img/news_sample_img.jpg" width="100%" alt="">
-                                        </div>
-                                        <div class="date">
-                                            <i>07.02.17</i>
-                                        </div>
-                                        <div class="name">
-                                            <a href="#">Новый вид киселя поступил в продажу</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="news-item">
-                                        <div class="img-news img-responsive">
-                                            <img src="img/news_sample_img.jpg" width="100%" alt="">
-                                        </div>
-                                        <div class="date">
-                                            <i>07.02.17</i>
-                                        </div>
-                                        <div class="name">
-                                            <a href="#">Новый вид киселя поступил в продажу</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Главная</a></li>
+                                <li class="active">Новости</li>
+                            </ul>
 
+                            <h1>Новости компании</h1>
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="item">
+                                        <div class="img-news">
+                                            <img src="img/news_sample_img.jpg" class="img-full-responsive"
+                                                 alt="News 1">
+                                        </div>
+                                        <div class="text-news">
+                                            <div class="date">
+                                                <i class="italic">07.02.17</i>
+                                            </div>
+                                            <div class="name">
+                                                <a class="link-default" href="#">Новый вид киселя поступил в продажу</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="item">
+                                        <div class="img-news">
+                                            <img src="img/news_sample_img.jpg" class="img-full-responsive"
+                                                 alt="News 1">
+                                        </div>
+                                        <div class="text-news">
+                                            <div class="date">
+                                                <i class="italic">07.02.17</i>
+                                            </div>
+                                            <div class="name">
+                                                <a class="link-default" href="#">Новый вид киселя поступил в продажу</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="item">
+                                        <div class="img-news">
+                                            <img src="img/news_sample_img.jpg" class="img-full-responsive"
+                                                 alt="News 1">
+                                        </div>
+                                        <div class="text-news">
+                                            <div class="date">
+                                                <i class="italic">07.02.17</i>
+                                            </div>
+                                            <div class="name">
+                                                <a class="link-default" href="#">Новый вид киселя поступил в продажу</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="item">
+                                        <div class="img-news">
+                                            <img src="img/news_sample_img.jpg" class="img-full-responsive"
+                                                 alt="News 1">
+                                        </div>
+                                        <div class="text-news">
+                                            <div class="date">
+                                                <i class="italic">07.02.17</i>
+                                            </div>
+                                            <div class="name">
+                                                <a class="link-default" href="#">Новый вид киселя поступил в продажу</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="text-center">
+                                    <ul class="pagination">
+                                        <li><a href="#">«</a></li>
+                                        <li><a class="active">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <ul class="pagination">
-                                <li><a href="#">«</a></li>
-                                <li class="active"><a>1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">»</a></li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="callback footer-fixed left">
-                    Заказать<br>обратный звонок
-                </div>
+
+        <div class="btns pos-r" style="display: none">
+            <div class="callback pos-a">
+                <div>Заказать<br>обратный звонок</div>
             </div>
-            <div class="col-md-1 col-md-offset-8">
-                <div class="arrow-up pull-right footer-fixed right">
-                </div>
+            <div class="arrow-up pos-a">
+                <div>arrow</div>
             </div>
         </div>
-    </main>
 </div>
-<div class="line line-bottom"></div>
+
+</main>
+</div>
 
 <footer id="footer">
     <div class="container">
-        <div class="footer-content">
-            <div class="row">
-                <div class="col-md-3">
+        <div class="row">
+            <div class="content">
+                <div class="col-md-3 col-sm-3 content-left">
                     <div class="copy">
                         <p>&copy 2009 - 2017</p>
                         <p>ООО "Стандарт"</p>
@@ -279,28 +250,28 @@
                         <p>г. Ижевск, ул. Новоажимова, 12</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
                     <nav class="footer">
                         <ul class="list-unstyled">
-                            <li><a href="index.html">Главная</a></li>
+                            <li class="active"><a href="index.html">Главная</a></li>
                             <li><a href="#">О компании</a></li>
                             <li><a href="catalog.html">Каталог продуктов</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
                     <nav class="footer">
                         <ul class="list-unstyled">
-                            <li class="active"><a href="news.html">Новости</a></li>
+                            <li><a href="news.html">Новости</a></li>
                             <li><a href="#">Доставка и оплата</a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3">
-                    <div class="develop">
+                <div class="col-md-3 col-sm-3">
+                    <div class="develop pull-right">
                         <a href="#">
-                            <img src="img/link.png" alt="Электрон18">
+                            <img src="img/link.png" alt="Электрон18" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -308,10 +279,9 @@
         </div>
     </div>
 </footer>
-<div id="bg-wrap"></div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="/js/templ.js"></script>
 </body>
