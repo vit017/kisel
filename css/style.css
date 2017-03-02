@@ -1,0 +1,143 @@
+body {
+    font-family: PTSans, Arial, sans-serif;
+}
+
+.bold {
+    font-family: PTSansBold;
+}
+
+.italic {
+    font-family: PTSansItalic;
+}
+
+.pos-s {
+    position: static;
+}
+.pos-r {
+    position: relative;
+}
+.pos-a {
+    position: absolute;
+}
+.pos-f {
+    position: fixed;
+}
+
+.table-align {
+    display: table;
+}
+.table-align > [class^="col-"]{
+    display: table-cell;
+    float: none !important;
+    vertical-align: middle;
+}
+
+.list-unstyled {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+
+
+#wrap {
+    background: url(../img/header-redline.jpg) repeat-x 0 0, url(../img/footer-redline.jpg) repeat-x 0 100%, url(../img/background.jpg) no-repeat center top, #999;
+    padding: 5px 0;
+}
+
+.container {
+    background: #fff;
+    padding: 0 30px;
+}
+.content-left {
+    padding-right: 30px;
+}
+
+.h-navigation {
+    margin-top: .94em;
+}
+
+#content-wrap .main {
+    padding-top: 1.563em;
+}
+
+#catalog-menu h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#h-nav li {
+    float: left;
+}
+
+#h-nav a {
+    background: green;
+    color: #fff;
+    font-size: 1em;
+    padding: .25em 1em;
+}
+
+.main .section {
+    padding: 1.825em 0;
+}
+
+
+.download-catalog {
+    margin-left: -1.825em;
+}
+
+.company {
+    font-size: 1.125em;
+}
+.section p {
+    margin: 0;
+}
+
+
+.img-full-responsive {
+    width: 100%;
+}
+.text-hit .character {
+    color: gray;
+    display: block;
+}
+
+
+.popular .view-catalog {
+    background: url(../img/arrow.png) no-repeat;
+    padding: .94em 1.25em;
+}
+
+.be-distributer i {
+    bottom: 0;
+}
+
+
+.btns .arrow-up {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+#footer {
+    background: #bbb;
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 13px;
+    }
+}
