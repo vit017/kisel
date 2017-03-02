@@ -58,8 +58,17 @@ p {
     background: #fff;
     padding: 0 30px;
 }
+
+.h-info {
+    margin-top: 6px;
+}
+
 .content-left {
     padding-right: 30px;
+}
+
+.img-info {
+    margin-top: 12px;
 }
 
 .h-navigation {
