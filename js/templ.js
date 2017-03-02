@@ -28,6 +28,24 @@ function checkFooterBtns($footer, $btnArrow, $btnCallback) {
 
 $(function () {
 
+    /* mobile menu */
+    $('#touch-menu').click(function(ev) {
+        $(this).toggleClass('active');
+        $('#nav-main').slideToggle();
+        ev.preventDefault();
+    });
+    /* mobile menu */
+
+    /* mobile catalog */
+    $('#sidebar-left h2').click(function(ev) {
+        $(this).toggleClass('active');
+        $('.nav-catalog').slideToggle();
+        ev.preventDefault();
+    });
+    /* mobile catalog */
+
+
+
     /* footer fixed btns */
     var $btnArrow = $('.footer-fixed.arrow-up'),
         $btnCallback = $('.footer-fixed.callback'),

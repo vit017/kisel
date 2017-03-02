@@ -263,11 +263,15 @@ body a:hover {
     margin-top: 15px;
 }
 
-#nav-main {
+.menu, #touch-menu {
     background: #8cba62;
 }
+.menu a, #touch-menu a {
+    color: #fff;
+    text-decoration: underline;
+}
 
-#nav-main li {
+.menu li {
     padding: 4px 16px;
 }
 
@@ -279,17 +283,12 @@ body a:hover {
     padding-right: 22px;
 }
 
-#nav-main li.active {
+.menu li.active {
     background: #517539;
 }
 
-#nav-main li.active a {
+.menu li.active a {
     text-decoration: none;
-}
-
-#nav-main a {
-    color: #fff;
-    text-decoration: underline;
 }
 
 .list-unstyled {
@@ -991,9 +990,144 @@ button.product-compare {
 }
 
 @media screen and (max-width: 991px) {
-    #nav-main {
-        margin-top: 10px;
+    body {
+        background: none;
     }
+    .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .list-inline {
+        margin-bottom: 0;
+    }
+    .logo {
+        text-align: center;
+    }
+
+    #main {
+        margin-top: 0;
+    }
+
+    #nav-main {
+        border-bottom: 2px solid #fff;
+        display: none;
+    }
+    #nav-main li, #nav-main li:first-child, #sidebar-left li, #sidebar-left li:hover {
+        display: block;
+        line-height: 1;
+        margin-top: 0;
+        padding: 0;
+    }
+    #nav-main li:last-child a, #sidebar-left li:last-child a{
+        padding-bottom: 20px;
+    }
+    #nav-main li.active, #nav-main li:hover {
+        background: #8cba62;
+    }
+    #nav-main li:hover a {
+        text-decoration: none;
+    }
+    #nav-main a, #sidebar-left a {
+        display: block;
+        padding: 13px 20px;
+    }
+    #touch-menu {
+        margin-top: 15px;
+    }
+    #touch-menu, #sidebar-left h2 {
+        color: #fff;
+        display: block;
+        font-family: PTSans-Bold, Arial, sans-serif;
+        font-size: 19px;
+        line-height: 1;
+        padding: 10px 20px;
+        position: relative;
+        text-decoration: none;
+    }
+    #touch-menu.active, #touch-menu.active:hover, #sidebar-left h2.active, #sidebar-left h2.active:hover {
+        background: #c2303d;
+    }
+    #nav-main,
+    #touch-menu:hover,
+    #sidebar-left .active,
+    #sidebar-left li:hover{
+        background: #517539;
+    }
+    #touch-menu [class^="ico-"], #sidebar-left [class^="ico-"] {
+        height: 14px;
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        width: 17px;
+    }
+    #touch-menu.active .ico-menu-list {
+        background: url(../img/ico-catalog.png) no-repeat;
+        height: 17px;
+        top: 12px;
+    }
+    #touch-menu .ico-menu-list {
+        background: url(../img/ico-menu-list.png) no-repeat;
+    }
+
+    .nav-catalog {
+        display: none;
+    }
+    #sidebar-left {
+        background: #8cba62;
+        padding: 0;
+    }
+    #sidebar-left h2 {
+        background: #517539;
+        cursor: pointer;
+    }
+    #sidebar-left li:hover {
+        margin-left: 0;
+    }
+    #sidebar-left a {
+        color: #fff;
+    }
+
+    #sidebar-left h2[class^="ico-"] {
+        height: 17px;
+    }
+    #sidebar-left h2.active .ico-catalog-mobile {
+        background: url(../img/ico-menu-list.png) no-repeat;
+    }
+    #sidebar-left .ico-catalog-mobile {
+        background: url(../img/ico-catalog.png) no-repeat;
+    }
+
+
+
+    /*
+    #menu-mobile:hover {
+        background: #517539;
+        cursor: pointer;
+    }
+    #menu-mobile.active{
+        background: #c2303d;
+    }
+    #menu-mobile.active .ico-menu-close {
+        display: block;
+    }
+    #menu-mobile .ico-menu-close {
+        display: none;
+    }
+    #menu-mobile.active .ico-menu-list {
+        display: none;
+    }
+    #menu-mobile .ico-menu-list {
+        display: block;
+    }
+
+    #menu-mobile a {
+        font-family: PTSans-Bold, Arial, sans-serif;
+        font-size: 19px;
+        text-decoration: none;
+    }
+    */
+
     .carousel-control.right {
         background-position: 30px 50%;
     }
