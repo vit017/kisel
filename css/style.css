@@ -1,7 +1,9 @@
 body {
     font-family: PTSans, Arial, sans-serif;
 }
-
+p {
+    margin: 0;
+}
 .bold {
     font-family: PTSansBold;
 }
@@ -48,7 +50,7 @@ body {
 
 
 #wrap {
-    background: url(../img/header-redline.jpg) repeat-x 0 0, url(../img/footer-redline.jpg) repeat-x 0 100%, url(../img/background.jpg) no-repeat center top, #999;
+    background: url(../img/header-redline.jpg) repeat-x 0 0, url(../img/footer-redline.jpg) repeat-x 0 100%, url(../img/bg-main.png) no-repeat center top, url(../img/bg-bottom.png) repeat-y center top, #e0e0e0;
     padding: 5px 0;
 }
 
@@ -96,9 +98,6 @@ body {
 .company {
     font-size: 1.125em;
 }
-.section p {
-    margin: 0;
-}
 
 
 .img-full-responsive {
@@ -133,7 +132,13 @@ body {
 
 
 #footer {
-    background: #bbb;
+    background: #f2f2f2;
+}
+#footer .container {
+    background: none;
+}
+#footer .content {
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 991px) {
