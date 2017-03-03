@@ -41,6 +41,15 @@ $(function () {
         });
     }
 
+    /**
+     * add product to compare list. catalog detail page
+     */
+    $('.cart .compare').click(function() {
+        var $panel = getComparePanel(),
+            $item = getCompareItem();
+
+        insertCompare($item, $panel);
+    });
 
     /**
      * Compare page. Remove item from compare list
@@ -51,6 +60,25 @@ $(function () {
 
 
 });
+
+function insertCompare($item, $dest) {
+    $dest.img.attr('src', $item.imgSrc);
+    $dest.img.attr('alt', $item.title);
+
+    $dest.product.text($item.title);
+    $dest.panel.css('z-index', 999);
+    $dest.panel.css('opacity', 1);
+
+    return true;
+}
+
+function getCompareItem() {
+    var $parent = $('.content-center');
+    var title = $parent.find('h1').text(),
+        imgSrc = $parent.find('.img-detail img').attr('src');
+
+    return {title: title, imgSrc: imgSrc};
+}
 
 function getComparePanel() {
     var $panel = $('#panel-compare'),

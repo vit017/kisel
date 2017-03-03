@@ -448,7 +448,7 @@ p {
 
 .content-center h1 {
     font-size: 1.875em;
-    margin-top: 0;
+    margin-top: .375em;
 }
 
 .pagination a.active {
@@ -494,6 +494,50 @@ a[href="#carousel-compare"] {
 .content-center.catalog .item {
     padding-bottom: 1.875em;
     padding-top: 2.06em;
+}
+
+.features-detail {
+    margin-top: 1.25em;
+}
+.features-detail span {
+    color: #aaa;
+}
+.social {
+    background: url(../img/social.png) no-repeat 0 0;
+    height: 30px;
+    margin-top: 2.5em;
+    width: 130px;
+}
+.descr-hit span {
+    color: #aaa;
+    display: block;
+    font-size: 1em;
+}
+.cart {
+    margin-top: .937em;
+}
+.cart .compare {
+    background: url(../img/ico-compare.png) no-repeat .625em 50%, url(../img/ico-compare-plus.png) no-repeat 2.18em 50%, url(../img/ico-compare-vline.png) no-repeat 3.125em 50%, #cc3333;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: .25em .937em .25em 3.75em;
+}
+.cart .order {
+    background-color: #517539;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 1.25em;
+    padding: .25em 3.125em;
+}
+#order-product .submit:hover {
+    text-decoration: none;
+}
+.similar {
+    padding-bottom: 1.875em;
 }
 
 .ico-del {
