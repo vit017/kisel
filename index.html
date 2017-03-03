@@ -107,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 content-left">
                         <aside id="catalog-menu">
-                            <h2>Каталог продуктов</h2>
+                            <h2>Каталог продуктов <i class="ico-menu-catalog"></i></h2>
                             <nav class="clearfix pos-r">
                                 <ul class="list-unstyled clearfix">
                                     <li><a href="#">Кисель "Киселёша" с кусочками ягод и фруктов</a></li>
@@ -504,7 +504,32 @@
 
                             <div class="section partners">
                                 <h2>Наши партнёры</h2>
-                                <div id="carousel-partners" class="carousel slide">
+                                <div id="carousel-partners-mobile" class="hidden-sm hidden-md hidden-lg carousel slide">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active clearfix">
+                                            <div class="col-xs-offset-4">
+                                                <div class="img-partner">
+                                                    <img src="img/partner_sample_logo_1.jpg" class="img-responsive"
+                                                         alt="Partner 1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item clearfix">
+                                            <div class="col-xs-offset-4">
+                                                <div class="img-partner">
+                                                    <img src="img/partner_sample_logo_2.jpg" class="img-responsive"
+                                                         alt="Partner 1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#carousel-partners-mobile" role="button"
+                                       data-slide="prev"></a>
+                                    <a class="right carousel-control" href="#carousel-partners-mobile" role="button"
+                                       data-slide="next"></a>
+                                </div>
+
+                                <div id="carousel-partners" class="carousel slide hidden-xs">
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active clearfix">
                                             <div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3">
@@ -638,13 +663,14 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="btns-fix pos-r">
-                    <div class="col-md-3 col-sm-3 pos-s">
+                    <div class="pos-s">
                         <div class="callback pos-a">
                             Заказать<br>обратный звонок
                         </div>
                     </div>
-                    <div class="col-md-1 col-md-offset-8 col-sm-1 col-sm-offset-8 text-right no-pd">
+                    <div class="text-right no-pd">
                         <span class="arrow-up pos-a"></span>
                     </div>
                 </div>

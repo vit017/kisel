@@ -86,6 +86,11 @@ p {
     background: #fff;
 }
 
+#map-production {
+    height: 18em;
+    width: 29em;
+}
+
 .h-info {
     color: #000;
     margin-top: .375em;
@@ -181,6 +186,9 @@ p {
     margin-top: 0;
     padding: 0;
 }
+.breadcrumb>.active {
+    color: #010101;
+}
 
 .breadcrumb a {
     text-decoration: underline;
@@ -196,6 +204,7 @@ p {
 
 #catalog-menu {
     padding-left: 1.25em;
+    padding-bottom: 2em;
 }
 
 #catalog-menu h2 {
@@ -247,7 +256,7 @@ p {
 #carousel-main .item .what {
     color: #c2303d;
     font-size: 7em;
-    line-height: 1;
+    line-height: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -495,14 +504,19 @@ a[href="#carousel-compare"] {
     padding-bottom: 1.875em;
     padding-top: 2.06em;
 }
-
-.features-detail, .features span {
+.features-detail {
+    margin-top: 1.25em;
+}
+.features-detail span, .features span {
     color: #aaa;
     margin-top: 1.25em;
 }
 
 #carousel-compare .img-hit {
     margin-right: 1.68em;
+}
+.carousel-control {
+    width: 20px;
 }
 [href="#carousel-compare"].left {
     background-position: 0 33%;
@@ -770,6 +784,16 @@ a#touch-menu {
     .container {
         padding: 0 15px;
     }
+    .content-center {
+        margin-top: 1.875em;
+    }
+    #map-production {
+        height: 20em;
+        width: 39em;
+    }
+    .breadcrumb {
+        margin-top: 1.25em;
+    }
     .content-left {
         padding-right: 15px;
     }
@@ -787,7 +811,7 @@ a#touch-menu {
         width: 90%;
     }
     #h-nav {
-        margin-top: 1em;
+        margin: 1em -15px 0 -15px;
     }
     #h-nav ul {
         background: #517539;
@@ -825,7 +849,7 @@ a#touch-menu {
         width: 17px;
     }
     a#touch-menu.active .ico-menu-list {
-        background: url(../img/ico-catalog.png) no-repeat;
+        background: url(../img/ico-compare.png) no-repeat;
         height: 17px;
         top: 12px;
     }
@@ -846,7 +870,15 @@ a#touch-menu {
     }
 
     #catalog-menu {
+        margin: 0 -15px -15px;
         padding-left: 0;
+    }
+    #catalog-menu h2 .ico-menu-catalog {
+        background: url(../img/ico-compare.png) no-repeat 100% 50%;
+        top: 11px;
+    }
+    #catalog-menu h2.active .ico-menu-catalog {
+        background: url(../img/ico-menu-list.png) no-repeat 100% 50%;
     }
     #catalog-menu ul {
         background: #8cba62;
@@ -896,14 +928,40 @@ a#touch-menu {
         font-size: 1.5em;
     }
     .download-catalog {
+        font-size: 1.2em;
         margin-left: 0;
+        margin-top: 1.5em;
+    }
+    .radovo .img-catalog {
+        float: left !important;
+    }
+
+    [href="#carousel-compare"].left, [href="#carousel-compare"].right {
+        width: 20px;
+    }
+
+    #carousel-compare-mobile .item-catalog + .item-catalog {
+        margin-left: -30px;
     }
 
     .img-responsive {
         display: inline-block;
     }
-    .img-hit, .img-adv, .img-delivery {
+    .img-hit, .img-adv, .img-delivery, .img-catalog, .img-detail {
         text-align: center;
+    }
+    .img-compare {
+        left: 35%;
+    }
+
+    .cart .order, .cart .compare, .production .write-us a {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    .cart .compare {
+        background: url(../img/ico-compare.png) no-repeat 39% 50%, url(../img/ico-compare-plus.png) no-repeat 42% 50%, url(../img/ico-compare-vline.png) no-repeat 44% 50%, #cc3333;
+        padding-left: 35px;
     }
 
     .popular .view-catalog {
@@ -949,7 +1007,7 @@ a#touch-menu {
     #footer .address {
         float: right;
         font-size: 1.2em;
-        margin-right: 1.68em;
+        margin-right: 100px;
         margin-top: 0;
         text-align: left;
     }
@@ -968,4 +1026,10 @@ a#touch-menu {
         margin-top: 2em;
     }
 
+}
+
+
+.fixed-block {
+    bottom: 220px;
+    position: fixed;
 }
