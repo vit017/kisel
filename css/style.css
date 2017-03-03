@@ -496,11 +496,16 @@ a[href="#carousel-compare"] {
     padding-top: 2.06em;
 }
 
-.features-detail {
+.features-detail, .features span {
+    color: #aaa;
     margin-top: 1.25em;
 }
-.features-detail span {
-    color: #aaa;
+
+[href="#carousel-compare"].left {
+    background-position: 0 33%;
+}
+[href="#carousel-compare"].right {
+    background-position: 100% 33%;
 }
 .social {
     background: url(../img/social.png) no-repeat 0 0;
