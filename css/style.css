@@ -707,6 +707,7 @@ a[href="#carousel-compare"] {
     margin-right: 1.25em;
     padding: .25em 3.125em;
     text-align: center;
+    text-decoration: none;
     width: 100%;
 }
 
@@ -714,5 +715,44 @@ a[href="#carousel-compare"] {
 @media screen and (max-width: 1199px) {
     body {
         font-size: 14px;
+    }
+    .img-info {
+        display: none;
+    }
+    #h-nav a {
+        font-size: .9em;
+        padding: .438em 1.35em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .h-info .hours {
+        font-size: 1.138em;
+    }
+    #h-nav a {
+        font-size: 0.8em;
+        padding: .438em 0.75em;
+    }
+    #carousel-main .item .we-do {
+        font-size: 2.26em;
+        line-height: 1;
+    }
+    #carousel-main .item .what {
+        font-size: 5em;
+    }
+    #carousel-main .item .and-other {
+        font-size: 1.175em;
+    }
+    #carousel-main .item a.to-catalog {
+        font-size: 0.925em;
+    }
+    .name-review, .short-review {
+        font-size: 1em;
+    }
+    .be-distributer .invite {
+        font-size: .98em;
+    }
+    .be-distributer .phone {
+        font-size: 2em;
     }
 }
