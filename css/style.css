@@ -501,6 +501,9 @@ a[href="#carousel-compare"] {
     margin-top: 1.25em;
 }
 
+#carousel-compare .img-hit {
+    margin-right: 1.68em;
+}
 [href="#carousel-compare"].left {
     background-position: 0 33%;
 }
