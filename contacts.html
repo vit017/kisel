@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,182 +19,195 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="https://api-maps.yandex.ru/2.1/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 </head>
 <body>
-<div class="line line-top"></div>
-<div class="container bg-main">
+
+<div id="wrap">
     <header id="header">
-        <div class="h-info">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logo">
-                        <a href="index.html"><img src="img/logo.png" alt="Радово"></a>
-                    </div>
-                </div>
-                <div class="h-info-text clearfix">
-                    <div class="col-md-3">
-                        <div class="part-img">
-                            <img src="img/ico-clock.png" alt="Телефон в Ижевске">
-                        </div>
-                        <div class="part-info pull-left text-right i-clock">
-                            <small>Режим работы</small>
-                            <strong>пн - пт 9:00 - 17:00</strong>
-                            <span><a href="#">Карта проезда</a></span>
+        <div class="container">
+            <div class="h-info">
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <div class="logo">
+                            <img src="img/logo.png" class="img-responsive" alt="Радово">
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="part-info pull-right text-right i-phone">
-                            <small>Телефон в Ижевске</small>
-                            <strong>8 (3412) 54-06-00</strong>
-                            <span><a href="#">Заказать обратный звонок</a></span>
-                        </div>
-                        <div class="part-img pull-right">
-                            <img src="img/ico-phone.png" alt="Телефон в Ижевске">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Режим работы</p>
+                                <p class="hours">пн - пт 9:00 - 17:00</p>
+                                <p class="map-link"><a class="link-default" href="#">Карта проезда</a></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="part-info pull-right text-right i-phone">
-                            <small>Федеральный номер</small>
-                            <strong>8 800 123 4567</strong>
-                            <span>По России бесплатно</span>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info pull-right">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Телефон в Ижевске</p>
+                                <p class="hours">8 (3412) 54-06-00</p>
+                                <p class="map-link"><a class="link-default" href="#">Заказать обратный звонок</a></p>
+                            </div>
                         </div>
-                        <div class="part-img pull-right">
-                            <img src="img/ico-phone.png" alt="Горячая линия">
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info pull-right">
+                            <div class="img-info pull-left">
+                                <img src="img/ico-clock.png" class="img-responsive" alt="Телефон в Ижевске">
+                            </div>
+                            <div class="text-info pull-left text-right">
+                                <p class="hours-title">Федеральный номер</p>
+                                <p class="hours">8 800 123 4567</p>
+                                <p class="note">По России бесплатно</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="h-nav">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="search">
-                        <form action="#" id="h-search">
-                            <input type="submit" value="">
-                            <input type="text" placeholder="Поиск">
-                        </form>
+            <div class="h-navigation">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <div id="h-search" class="pos-r">
+                            <form action="#">
+                                <input type="submit" value="">
+                                <input type="text" placeholder="Поиск">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <nav id="h-nav">
+                            <ul class="clearfix list-unstyled">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="#">О комании</a></li>
+                                <li><a href="catalog.html">Каталог продуктов</a></li>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                                <li><a href="#">Поставщикам</a></li>
+                                <li><a class="active" href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <nav id="nav-main">
-                        <ul class="list-inline clearfix">
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="#">О комании</a></li>
-                            <li><a href="catalog.html">Каталог продуктов</a></li>
-                            <li><a href="news.html">Новости</a></li>
-                            <li><a href="#">Партнерам</a></li>
-                            <li><a href="#">Поставщикам</a></li>
-                            <li class="active"><a href="contacts.html">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
+
         </div>
     </header>
 
-    <main id="main">
-        <div class="row">
-            <div class="col-md-3">
-                <aside id="sidebar-left">
-                    <h2 class="title-sidebar">Каталог продуктов</h2>
-                    <nav class="nav-catalog">
-                        <ul class="list-unstyled clearfix">
-                            <li><a href="#">Кисель "Киселёша" с кусочками ягод и фруктов</a></li>
-                            <li><a href="#">Кисель быстрорастворимый</a></li>
-                            <li><a href="#">Кисель овсяный</a></li>
-                            <li><a href="#">Кисель овсяный на основе стевии</a></li>
-                            <li><a href="#">Кисель "Ассорти" в банке</a></li>
-                            <li><a href="#">Кисель с кусочками ягод и фруктов в банке</a></li>
-                            <li><a href="#">Желе</a></li>
-                            <li><a href="#">Желатин и лимонная кислота</a></li>
-                            <li><a href="#">Каша овсяная</a></li>
-                            <li><a href="#">Супы</a></li>
-                            <li><a href="#">Лавровый лист</a></li>
-                            <li><a href="#">Какао порошок</a></li>
-                            <li><a href="#">Кофе</a></li>
-                            <li><a href="#">Бакалея</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </div>
-            <div class="col-md-9">
-                <div id="main-content">
-                    <div class="page-contacts">
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Главная</a></li>
-                            <li class="active">Контакты</li>
-                        </ul>
-                        <h1 class="title">Адрес производства</h1>
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="production-address">
-                                    <div id="map-production" style="width:470px;height:300px">
+    <main id="content-wrap">
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 content-left">
+                        <aside id="catalog-menu">
+                            <h2>Каталог продуктов</h2>
+                            <nav>
+                                <ul class="list-unstyled clearfix">
+                                    <li><a href="#">Кисель "Киселёша" с кусочками ягод и фруктов</a></li>
+                                    <li class="active"><a href="#">Кисель быстрорастворимый</a></li>
+                                    <li><a href="#">Кисель овсяный</a></li>
+                                    <li><a href="#">Кисель овсяный на основе стевии</a></li>
+                                    <li><a href="#">Кисель "Ассорти" в банке</a></li>
+                                    <li><a href="#">Кисель с кусочками ягод и фруктов в банке</a></li>
+                                    <li><a href="#">Желе</a></li>
+                                    <li><a href="#">Желатин и лимонная кислота</a></li>
+                                    <li><a href="#">Каша овсяная</a></li>
+                                    <li><a href="#">Супы</a></li>
+                                    <li><a href="#">Лавровый лист</a></li>
+                                    <li><a href="#">Какао порошок</a></li>
+                                    <li><a href="#">Кофе</a></li>
+                                    <li><a href="#">Бакалея</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <div class="content-center">
 
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Главная</a></li>
+                                <li class="active">Адрес происзводства</li>
+                            </ul>
+
+                            <h1>Адрес происзводства</h1>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="production-address">
+                                        <div id="map-production" style="width:470px;height:300px">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="production">
+                                        <div class="sect">
+                                            <b>Адресс:</b>
+                                            <p>426010 Удмуртская республика</p>
+                                            <p>г. Ижевск, ул. Новоажимова, 12</p>
+                                        </div>
+                                        <div class="sect mail">
+                                            <b>Электронная почта:</b>
+                                            <a href="mailto:radovo@bk.ru">radovo@bk.ru</a>
+                                        </div>
+                                        <div class="sect write-us">
+                                            <a data-toggle="modal" data-target="#write">Написать нам</a>
+                                        </div>
+                                        <div class="sect">
+                                            <b>Телефоны:</b>
+                                            <p class="phone">8 (3412) 540-600</p>
+                                            <p class="phone">8 (3412) 540-502</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5">
-                                <div class="production">
-                                    <div class="sect">
-                                        <b>Адресс:</b>
-                                        <p>426010 Удмуртская республика</p>
-                                        <p>г. Ижевск, ул. Новоажимова, 12</p>
+
+                            <div class="contacts delivery">
+                                <div class="row vcenter">
+                                    <div class="col-md-6">
+                                        <h2>Звоните, будем рады сотрудничеству!</h2>
+                                        <p>Быстро обо всем договоримся и уже завтра партия наших продуктов будет
+                                            отправлена
+                                            по
+                                            вашему адрес</p>
                                     </div>
-                                    <div class="sect mail">
-                                        <b>Электронная почта:</b>
-                                        <a href="mailto:radovo@bk.ru">radovo@bk.ru</a>
-                                    </div>
-                                    <div class="sect write-us">
-                                        <a data-toggle="modal" data-target="#write">Написать нам</a>
-                                    </div>
-                                    <div class="sect">
-                                        <b>Телефоны:</b>
-                                        <p class="phone">8 (3412) 540-600</p>
-                                        <p class="phone">8 (3412) 540-502</p>
+                                    <div class="col-md-6">
+                                        <div class="img-delivery pull-right">
+                                            <img src="img/truck2.jpg" width="321" alt="Сотрудничество">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="delivery">
-                            <div class="row vcenter">
-                                <div class="col-md-6">
-                                    <h2>Звоните, будем рады сотрудничеству!</h2>
-                                    <p>Быстро обо всем договоримся и уже завтра партия наших продуктов будет отправлена
-                                        по
-                                        вашему адрес</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="img-delivery pull-right">
-                                        <img src="img/truck2.jpg" width="321" alt="Сотрудничество">
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="btns-fix pos-r">
+                    <div class="col-md-3 col-sm-3 pos-s">
+                        <div class="callback pos-a">
+                            Заказать<br>обратный звонок
                         </div>
+                    </div>
+                    <div class="col-md-1 col-md-offset-8 col-sm-1 col-sm-offset-8 text-right no-pd">
+                        <span class="arrow-up pos-a"></span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="callback footer-fixed left">
-                    Заказать<br>обратный звонок
-                </div>
-            </div>
-            <div class="col-md-1 col-md-offset-8">
-                <div class="arrow-up pull-right footer-fixed right">
-                </div>
-            </div>
-        </div>
+
     </main>
 </div>
-<div class="line line-bottom"></div>
 
 <footer id="footer">
     <div class="container">
-        <div class="footer-content">
-            <div class="row">
-                <div class="col-md-3">
+        <div class="content">
+            <div class="row clearfix">
+                <div class="col-md-3 col-sm-3 content-left">
                     <div class="copy">
                         <p>&copy 2009 - 2017</p>
                         <p>ООО "Стандарт"</p>
@@ -203,7 +217,7 @@
                         <p>г. Ижевск, ул. Новоажимова, 12</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
                     <nav class="footer">
                         <ul class="list-unstyled">
                             <li><a href="index.html">Главная</a></li>
@@ -212,19 +226,19 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
                     <nav class="footer">
                         <ul class="list-unstyled">
                             <li><a href="news.html">Новости</a></li>
                             <li><a href="#">Доставка и оплата</a></li>
-                            <li class="active"><a href="contacts.html">Контакты</a></li>
+                            <li><a class="active" href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3">
-                    <div class="develop">
+                <div class="col-md-3 col-sm-3">
+                    <div class="develop pull-right">
                         <a href="#">
-                            <img src="img/link.png" alt="Электрон18">
+                            <img src="img/link.png" alt="Электрон18" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -237,7 +251,8 @@
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-form">
-                <h1 class="title">Написать нам<span class="glyphicon glyphicon-remove close" data-dismiss="modal"></span></h1>
+                <h1 class="title">Написать нам<span class="glyphicon glyphicon-remove close"
+                                                    data-dismiss="modal"></span></h1>
                 <form>
                     <div class="form-group">
                         <label for="input-name">Как вас зовут*</label>
@@ -253,7 +268,8 @@
                     </div>
                     <div class="form-group">
                         <label for="input-message">Текст вашего сообщения</label>
-                        <textarea rows="8" class="form-control" id="input-message" placeholder="Ваше сообщение"></textarea>
+                        <textarea rows="8" class="form-control" id="input-message"
+                                  placeholder="Ваше сообщение"></textarea>
                     </div>
                     <div class="form-group captcha">
                         <div class="checkbox">
@@ -270,11 +286,31 @@
         </div>
     </div>
 </div>
-<div id="bg-wrap"></div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="/js/templ.js"></script>
+
+<script src="https://api-maps.yandex.ru/2.1/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<script>
+    ymaps.ready(function () {
+        var coordsProduction = [56.828527, 53.173644]; //УР, Ижевск, Новоажимова, 12
+        var map = new ymaps.Map('map-production', {
+            center: coordsProduction,
+            zoom: 15
+        });
+
+        map.geoObjects.add(
+            new ymaps.Placemark(
+                coordsProduction,
+                {iconCaption: 'улица Новоажимова, 12'},
+                {preset: "islands#blueCircleDotIconWithCaption"}
+            )
+        );
+
+        map.controls.destroy()
+    });
+</script>
+
 </body>
 </html>

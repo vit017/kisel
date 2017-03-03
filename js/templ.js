@@ -2,7 +2,6 @@ $(function () {
 
     /**
      * check fix buttons (arrow-up, callback) on window scroll event
-     * @type {*}
      */
     var $parent = $('.btns-fix'),
         $btnArrow = $parent.find('.arrow-up'),
@@ -41,7 +40,14 @@ $(function () {
             $(this).hide();
         });
     }
-    /* catalog */
+
+
+    /**
+     * Compare page. Remove item from compare list
+     */
+    $('.ico-del').click(function(event) {
+        event.preventDefault();
+    });
 
 
 });
