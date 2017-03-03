@@ -68,10 +68,11 @@ p {
 }
 
 .container {
-    background: #fff;
     padding: 0 30px;
 }
-
+#wrap .container {
+    background: #fff;
+}
 .h-info {
     color: #000;
     margin-top: .375em;
@@ -375,6 +376,9 @@ p {
     color: #666;
 }
 
+.img-catalog {
+    cursor: pointer;
+}
 .text-catalog {
     margin-top: 1.562em;
 }
@@ -406,10 +410,10 @@ p {
     bottom: .437em;
 }
 .btns-fix .callback:hover, .btns-fix .arrow-up:hover {
-    opacity: 1;
+    opacity: 1 !important;
 }
 .btns-fix .callback {
-    background: url(../img/ico-callback.png) no-repeat 30px 50%, #ffd633;
+    background: url(../img/ico-callback.png) no-repeat 1.875em 50%, #ffd633;
     font-size: .875em;
     margin-right: 3.125em;
     padding-left: 4.375em;
@@ -436,7 +440,7 @@ p {
 }
 #footer .content {
     padding: 2.5em 0 1.875em;
-    margin-top: 10px;
+    margin-top: .625em;
 }
 #footer .address {
     margin-top: 1.25em;
@@ -451,6 +455,37 @@ p {
 #footer nav li a.active {
     text-decoration: none;
 }
+
+
+#panel-compare {
+    background-color: #fb5f6d;
+    color: #fff;
+    left: 0;
+    opacity: 0;
+    padding-bottom: 1.25em;
+    padding-top: .625em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+#panel-compare .close {
+    position: absolute;
+    top: 0;
+}
+#panel-compare div {
+    margin-bottom: -.25em;
+}
+#panel-compare .product-compare-link {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    margin-top: .3125em;
+    padding: .15em 1.25em;
+    text-decoration: none;
+}
+
+
 
 @media screen and (max-width: 1199px) {
     body {
