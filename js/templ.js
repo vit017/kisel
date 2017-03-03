@@ -59,6 +59,22 @@ $(function () {
     });
 
 
+    /**
+     * mobile menu + catalog
+     */
+    $('#touch-menu').click(function(ev) {
+        $(this).toggleClass('active');
+        $('#h-nav ul').slideToggle();
+        ev.preventDefault();
+    });
+
+    $('#catalog-menu h2').click(function(ev) {
+        $(this).toggleClass('active');
+        $('#catalog-menu ul').slideToggle();
+        ev.preventDefault();
+    });
+
+
 });
 
 function insertCompare($item, $dest) {
@@ -92,7 +108,7 @@ function scrollWindow($btnArrow) {
     window.removeEventListener('scroll', checkFixBtns);
     $('html, body').animate({scrollTop: 0}, 200, function () {
         window.addEventListener('scroll', checkFixBtns);
-        $btnArrow.css('opacity', 0);
+        $btnArrow.css('visibility', 'hidden');
     });
 }
 
@@ -103,7 +119,7 @@ function checkFixBtns(maxScroll, $btns, btnOpacity) {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
     if (!scrolled) {
-        $btns[0].css('opacity', 0);
+        $btns[0].css('visibility', 'hidden');
     }
     else if (scrolled + document.documentElement.clientHeight >= maxScroll) {
         $btns.forEach(function ($btn) {
@@ -112,10 +128,10 @@ function checkFixBtns(maxScroll, $btns, btnOpacity) {
         });
     }
     else {
+        $btns[0].css('visibility', 'visible');
         $btns.forEach(function ($btn) {
             $btn.removeClass('pos-a');
             $btn.addClass('pos-f');
-            $btn.css('opacity', btnOpacity);
         });
     }
 

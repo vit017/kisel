@@ -126,7 +126,7 @@ p {
     font-size: .8125em;
 }
 
-#h-nav ul {
+#h-nav {
     background: #8cba62;
 }
 
@@ -711,6 +711,9 @@ a[href="#carousel-compare"] {
     width: 100%;
 }
 
+a#touch-menu {
+    display: none;
+}
 
 @media screen and (max-width: 1199px) {
     body {
@@ -755,4 +758,214 @@ a[href="#carousel-compare"] {
     .be-distributer .phone {
         font-size: 2em;
     }
+    .be-distributer i {
+        bottom: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    p {
+        line-height: inherit;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .content-left {
+        padding-right: 15px;
+    }
+    .logo {
+        text-align: center;
+    }
+    .logo img {
+        display: inline-block;
+    }
+    .info {
+        display: none;
+    }
+    #h-search {
+        margin: 0 auto;
+        width: 90%;
+    }
+    #h-nav {
+        margin-top: 1em;
+    }
+    #h-nav ul {
+        background: #517539;
+        margin-bottom: 2px;
+        padding-bottom: 1em;
+    }
+    #h-nav ul, #catalog-menu ul {
+        display: none;
+    }
+    #h-nav ul li {
+        float: none;
+    }
+    #h-nav ul li:last-child {
+        float: none;
+    }
+    #h-nav ul li a {
+        font-size: 1em;
+        padding: .438em 1.35em;
+    }
+    #h-nav ul li a:hover {
+        background: #8cba62;
+    }
+    #content-wrap .main {
+        padding-top: 0;
+    }
+
+    a#touch-menu:hover {
+        background: #8cba62;
+    }
+    a#touch-menu [class^="ico-"], #catalog-menu [class^="ico-"] {
+        height: 14px;
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        width: 17px;
+    }
+    a#touch-menu.active .ico-menu-list {
+        background: url(../img/ico-catalog.png) no-repeat;
+        height: 17px;
+        top: 12px;
+    }
+    a#touch-menu .ico-menu-list {
+        background: url(../img/ico-menu-list.png) no-repeat 100% 50%;
+        height: 17px;
+        top: 11px;
+    }
+    a#touch-menu, #catalog-menu h2 {
+        color: #fff;
+        display: block;
+        font-family: PTSansBold, Arial, sans-serif;
+        font-size: 1.187em;
+        line-height: 1;
+        padding: .625em 1.25em;
+        position: relative;
+        text-decoration: none;
+    }
+
+    #catalog-menu {
+        padding-left: 0;
+    }
+    #catalog-menu ul {
+        background: #8cba62;
+    }
+    #catalog-menu ul a {
+        color: #fff;
+        text-decoration: none;
+        padding: .5em 1.25em;
+    }
+    #catalog-menu li {
+        margin-top: 0;
+    }
+    #catalog-menu ul a:hover {
+        background: #517539;
+        margin-left: 0;
+    }
+    #catalog-menu h2 {
+        cursor: pointer;
+    }
+    #catalog-menu h2, #catalog-menu h2:hover {
+        background: #517539;
+    }
+    a#touch-menu.active, a#touch-menu.active:hover , #catalog-menu h2.active, #catalog-menu h2.active:hover {
+        background: #c2303d;
+    }
+
+    .text-slide {
+        margin-left: -1.875em;
+    }
+    #carousel-main .item .for {
+        font-size: 1em;
+    }
+    #carousel-main .item .we-do {
+        font-size: 2.6em;
+    }
+    #carousel-main .item .what {
+        font-size: 6em;
+    }
+    #carousel-main .item a.to-catalog {
+        font-size: 1.125em;
+    }
+
+    .radovo .table-align > [class^="col-"] {
+        float: left !important;
+    }
+    .radovo .company p {
+        font-size: 1.5em;
+    }
+    .download-catalog {
+        margin-left: 0;
+    }
+
+    .img-responsive {
+        display: inline-block;
+    }
+    .img-hit, .img-adv, .img-delivery {
+        text-align: center;
+    }
+
+    .popular .view-catalog {
+        background-size: cover;
+    }
+    .be-distributer {
+        margin-top: 1.25em;
+    }
+    .be-distributer .invite {
+        font-size: 1.4em;
+    }
+    .be-distributer .italic {
+        font-size: 1.1em;
+        position: relative;
+    }
+    .be-distributer .phone {
+        font-size: 3em;
+    }
+    
+    .delivery .table-align > [class^="col-"] {
+        display: block;
+        float: left !important;
+    }
+    .img-delivery {
+        float: none !important;
+    }
+    .news .item {
+        margin-bottom: 2em;
+    }
+    .img-news {
+        float: left;
+    }
+    .text-news {
+        float: left;
+        font-size: 1.1em;
+        margin-left: 1em;
+    }
+
+    #footer .copy {
+        float: left;
+        font-size: 1.2em;
+    }
+    #footer .address {
+        float: right;
+        font-size: 1.2em;
+        margin-right: 1.68em;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    #footer .content {
+        margin-top: -0.875em;
+    }
+
+    #footer nav {
+        margin-top: 2.5em;
+        font-size: 1.2em;
+    }
+
+    #footer .develop {
+        float: left !important;
+        margin-top: 2em;
+    }
+
 }
